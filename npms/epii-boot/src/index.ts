@@ -82,7 +82,7 @@ export async function bootStart(data: any = null, projectDir: string | null = nu
     }
 
     packageMap = getBootPackage(getPackage(projectRootDir));
-
+ 
     let packageList = sort(packageMap);
 
     for (let index = 0; index < packageList.length; index++) {

@@ -86,6 +86,7 @@ function bootStart(data = null, projectDir = null) {
         catch (e) {
         }
         packageMap = getBootPackage(getPackage(projectRootDir));
+        console.log(packageMap);
         let packageList = (0, tools_1.sort)(packageMap);
         for (let index = 0; index < packageList.length; index++) {
             const element = packageList[index];
