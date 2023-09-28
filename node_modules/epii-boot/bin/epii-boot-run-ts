@@ -1,5 +1,5 @@
 #!/usr/bin/env ts-node
 
-import {bootStart} from "epii-boot"
+let { bootStart } = require("epii-boot")
 
 bootStart();

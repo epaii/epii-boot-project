@@ -1,6 +1,6 @@
 {
   "name": "epii-boot",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "bin": {
     "epii-boot-run-js": "bin/epii-boot-run-js",
     "epii-boot-run-ts": "bin/epii-boot-run-ts"

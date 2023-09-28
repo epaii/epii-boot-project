@@ -6,12 +6,15 @@ function sort(packageMap) {
     let xianghuset = new Set();
     let addByKeys = function (keys) {
         keys.forEach(key => {
+            if (!packageMap[key].dependencies) {
+                throw new Error(key + " is not exist!");
+            }
             if (out.has(packageMap[key])) {
                 return;
             }
             packageMap[key].dependencies.forEach(ykey => {
                 if (xianghuset.has(key + "###" + ykey)) {
-                    throw new Error(key + " and " + ykey + " xun huan yinyong");
+                    throw new Error(key + " and " + ykey + "  circle dependencie  ");
                 }
                 else {
                     xianghuset.add(key + "###" + ykey);
