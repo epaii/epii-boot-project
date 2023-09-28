@@ -2,11 +2,8 @@ import App from "epii-tiny-app";
 type hasApp ={
     app:App
 }
-export default {
-    dependencies:["boot-c","boot-b"],
-    start(){
-        console.log('run in a');
-
-    }
+export default function (data:hasApp) {
+    console.log("run in c");
+    
     // data.app.module("/ddd",__dirname+"/aaa");
 }

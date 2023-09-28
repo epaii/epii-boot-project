@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "boot-a": "^1.0.0",
-    "boot-b": "^1.0.0",
+    "boot-a": "file:test-boot-npm/boot-a",
+    "boot-b": "file:test-boot-npm/boot-b",
+    "boot-c": "file:test-boot-npm/boot-c",
     "epii-boot": "file:npms/epii-boot",
     "epii-tiny-app": "^1.1.2"
   },

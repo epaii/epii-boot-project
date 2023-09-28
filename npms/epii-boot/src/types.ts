@@ -4,7 +4,7 @@ export type Package = {
 
 export type BootPackage = {
     name:string,
-    dependencies?: string[],
+    dependencies: string[],
     start(data: any): any
 }
 

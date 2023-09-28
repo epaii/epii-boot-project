@@ -1,6 +1,6 @@
 
 export default {
-    dependencies:["boot-a"],
+    dependencies:["boot-c"],
     start(data:any) {
         console.log("run in boot-b and get boot-a:age");
         return {

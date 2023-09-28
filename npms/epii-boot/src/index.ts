@@ -42,6 +42,7 @@ function getBootPackage(packageMap: PackageRecord): BootPackageMap {
                     }
                 } else if (m.start || m.dependencies) {
                     m.name = key;
+                    if(!m.dependencies) m.dependencies=[];
                     out[key] = m;
                 }
             } catch (error) {
