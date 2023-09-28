@@ -14,9 +14,9 @@
     "@types/node": "^20.7.0"
   },
   "scripts": {
-    "dev": "ts-node npms/epii-boot/bin/epii-boot-run.ts",
+    "dev": "ts-node npms/epii-boot/bin/epii-boot-run-ts",
     "build":"tsc -p npms/epii-boot",
-    "publish":"cd npms/epii-boot/dist-publish && npm publish"
+    "publish":"cd npms/epii-boot && npm publish"
   },
   "author": "",
   "license": "ISC"

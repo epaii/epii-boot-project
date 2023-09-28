@@ -1,11 +1,12 @@
 {
   "name": "epii-boot",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "bin": {
-    "epii-boot-run": "bin/epii-boot-run.ts"
+    "epii-boot-run-js": "bin/epii-boot-run-js",
+    "epii-boot-run-ts": "bin/epii-boot-run-ts"
   },
   "description": "",
-  "main": "src/index",
+  "main": "dist/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
