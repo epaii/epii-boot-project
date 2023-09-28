@@ -6,6 +6,9 @@ function sort(packageMap) {
     let xianghuset = new Set();
     let addByKeys = function (keys) {
         keys.forEach(key => {
+            if (out.has(packageMap[key])) {
+                return;
+            }
             packageMap[key].dependencies.forEach(ykey => {
                 if (xianghuset.has(key + "###" + ykey)) {
                     throw new Error(key + " and " + ykey + " xun huan yinyong");
