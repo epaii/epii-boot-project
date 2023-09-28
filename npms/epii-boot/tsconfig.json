@@ -4,7 +4,7 @@
       "target": "es2015",
       "module": "commonjs",
       "declaration": true,
-      "outDir": "./dist",
+      "outDir": "./dist-publish",
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
       "strict": true,
@@ -14,6 +14,6 @@
    
     "compileOnSave": true,
     "include": [
-      "src/"
+      "src","bin"
     ]
   }
