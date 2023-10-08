@@ -8,7 +8,7 @@
     "boot-b": "file:test-boot-npm/boot-b",
     "boot-c": "file:test-boot-npm/boot-c",
     "epii-boot": "file:npms/epii-boot",
-    "epii-tiny-app": "^1.1.2"
+    "shiyue-boot": "^1.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.7.0"

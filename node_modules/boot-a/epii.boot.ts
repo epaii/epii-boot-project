@@ -1,7 +1,4 @@
-import App from "epii-tiny-app";
-type hasApp ={
-    app:App
-}
+ 
 export default {
     dependencies:["boot-c","boot-b"],
     start(){

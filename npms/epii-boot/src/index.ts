@@ -47,7 +47,6 @@ function getBootPackage(packageMap: PackageRecord): BootPackageMap {
                 }
             } catch (error) {
                 // console.log(error);
-
                 continue;
             }
 
@@ -78,7 +77,8 @@ export async function bootStart(data: any = null, projectDir: string | null = nu
             }
         }
     } catch (e) {
-
+       // console.log(e);
+        
     }
 
     packageMap = getBootPackage(getPackage(projectRootDir));

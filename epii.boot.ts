@@ -1,13 +1,9 @@
-import { onBootFinish } from "epii-boot";
-import App from "epii-tiny-app";
+import { Module, Port, ResponseAdvice, Route, Use } from "shiyue-boot";
 
 export default function () {
-    let app = App.createServer();
-    onBootFinish(function () {
-        // app.listen(8080);
-    })
-    return {
-        app
-    }
 
+     
+    Route("/aaa", function (ctx) {
+        ctx.error(66666 + "");
+    })
 }

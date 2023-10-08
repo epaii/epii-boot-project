@@ -1,9 +1,8 @@
-import App from "epii-tiny-app";
-type hasApp ={
-    app:App
-}
-export default function (data:hasApp) {
-    console.log("run in c");
-    
-    // data.app.module("/ddd",__dirname+"/aaa");
+import { Module, Route } from "shiyue-boot";
+
+export default function () {
+    //    Module("/aaa",__dirname+"/c");
+    Route("/dddd", function (ctx) {
+        ctx.success({ d: 9 });
+    })
 }
